@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, rgba(3, 9, 145, 0.8 ) 40%, rgba( 993, 99, 0.9) 60%);
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        #logo {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        #avatar {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+        .left-column {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 2px solid rgba(255, 255, 255,800);
+            padding-right:20px;
+        }
+        .right-column {
+            width: 470px;
+            margin-left: 50px;
+            line-height: 1.32;
+        }
+
+        .card {
+	    position: absolute;
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(200px);
+            width: 1000px;
+            height: 710px;
+            padding: 50px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        h1{
+            margin-bottom: 12px;
+            color:greenyellow;
+            align-items:center
+        }
+        h2 {
+            margin-bottom: 8px;
+            align-items:center;
+        }
+
+        p {
+            font-size: 25px;
+            line-height: 1.7;
+        }
+
+        a {
+            color: white;
+        }
+
+        .section {
+            margin-bottom: 0px;
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contacts {
+           
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+            .contacts a {
+                display: block;
+                margin-bottom: 20px;
+                text-decoration: none;
+                color: white;
+            }
+
+            .contacts img {
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
+            }
+
+	button {
+		background-color: rgba(49, 42, 108, 0);
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+	}
+
+	.nav {
+		position: relative;
+		left: 480px;
+		bottom: 200px;
+		margin-left: 100px;
+		color: rgba(200, 80, 10, 1);
+	}	
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Content for left column goes here --> <img id="logo"                     src="https://lh3.googleusercontent.com/pw/ADCreHdaOMYiUdjIlNAkd_b5__H927yPc0fySkMRdRf1qaRgU26I1UW89DW_9LsfRbU7yvUEOfkbvk1sYWqNZIgNFAf40q51O1fZeMm91sAFycV-reJJcLw=w2400" />
+                <img id="avatar" src="https://s1.zerochan.net/Bongo.Cat.600.3353167.jpg" alt="" />
+                <div class="highlights">
+                    <h1><strong>Nguyễn Thị Thanh Thúy </strong></h1>
+                    <p><strong>TTNT2023 </strong></p>
+                    <p><strong>UIT VNUHCM </strong></p>
+                    <p><strong>
+                        Rớt xuống từ Mars </strong></p>
+                </div>
+            </div> <!-- Right Column -->
+            <div class="right-column">
+                <!-- Content for right column goes here -->
+                <div class="section">
+                    <h1>Who am I ??? </h1>
+                </div>
+                <div class="section">
+                    <h2>My Hobbies</h2>
+                    <ul>
+                        <!--Mấy Bạn thêm bao nhiêu.. thì nhiêu cái li ở dưới này nha-->
+                        <li>youuu </li>
+                        <li>listen to music (k-pop,usuk)</li>
+                        <li>reading book </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>My Dreams </h2>
+                    <ul>
+                        <!--Mấy Bạn thêm bao nhiêu.. thì nhiêu cái li ở dưới này nha-->
+                        <li>R&D</li>
+                        <li>Explore the universe </li>
+                        <li>Marry Cha Eun Woo </li>
+                    </ul>
+                </div>
+                <!--ngang này là giống mấy anh chị rùi á còn ở dưới là thêm nha-->
+                <div class="section">
+                    <h2>|Hỏi gì thì hỏi đi </h2>
+                <form>
+                    <!--các bạn có thể đặt câu hỏi tương tác ở đây-->
+                    <div>
+                        <label>Có bị khùm không ? </label>
+                    <input type="radio" placeholder=/>
+                    <select>
+                        <option>Có, sắp vào viện luôn rồi</option>
+                        <option>như trên</option>
+                        <option>éo có câu trả lời khác </option>
+                    </select>
+                   </div>
+
+                   <div>
+                    <label>Tại sao chọn AI? </label>
+                    <input type="radio" placeholder=/>
+                    <select>
+                        <option>Thích, thích 1 người ko cần lý do,bớt hỏi ok</option>
+                    </select>
+                   </div>
+
+                   <div>
+                    <label>Có người yêu chưa? </label>
+                    <input type="radio" placeholder=/>
+                    <select>
+                        <option>độc than, tự do, tự lo, hạnh phúttt </option>
+                    </select>
+                   </div>
+                </form>
+                <div class="contacts">
+                    <h2>Contact me</h2>
+                    <a href="https://www.facebook.com/profile.php?id=100071029714975" alt="">FaceBook</a>
+            </div>
+        </div>
+	<div><a href="../Thuy-Nga/index.html"><button type="button"><h1 class="nav">Next</h1></button></a></div>
+    </main>
+</body>
+
+</html>
+

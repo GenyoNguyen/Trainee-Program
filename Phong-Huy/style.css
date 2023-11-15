@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-		
+
 main {
 	height: 100%;
 	width: 100%;
@@ -44,6 +44,7 @@ a {
 }
 
 .card {
+	position: absolute;
 	background: rgba(0, 0, 0, 0.3);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(10px);
@@ -99,3 +100,22 @@ a {
 	width: 30px;
 	border-radius: 25%;
 }
+
+button {
+	background-color: rgba(49, 42, 108, 0);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	}
+
+.nav {
+	position: relative;
+	left: 550px;
+	margin-left: 100px;
+	color: rgba(237, 239, 32, 1);
+	}
+
